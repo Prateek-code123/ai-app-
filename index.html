@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Free AI Tools</h1>
+    <input type="text" id="search" placeholder="Search AI tools..." onkeyup="searchTools()">
+    
+    <ul id="ai-tools">
+        <li>ChatGPT - AI chatbot</li>
+        <li>DeepL - AI translator</li>
+        <li>DALL·E - AI image generator</li>
+        <li>Grammarly - AI writing assistant</li>
+        <li>Codeium - AI code assistant</li>
+    </ul>
+
+    <script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
+
+</body>
+</html>
